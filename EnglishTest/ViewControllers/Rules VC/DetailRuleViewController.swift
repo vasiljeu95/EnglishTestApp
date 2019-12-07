@@ -1,14 +1,14 @@
 //
-//  RulesViewController.swift
+//  DetailRuleViewController.swift
 //  EnglishTest
 //
-//  Created by Vladimir Zhirov on 12/6/19.
+//  Created by Vladimir Zhirov on 12/7/19.
 //  Copyright © 2019 Stepan Vasilyeu. All rights reserved.
 //
 
 import UIKit
 
-class RulesViewController: UIViewController {
+class DetailRuleViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
