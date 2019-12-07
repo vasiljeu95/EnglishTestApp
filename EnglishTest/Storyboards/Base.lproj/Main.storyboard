@@ -217,6 +217,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="ПРАВИЛА" id="D6e-oj-4Nw"/>
+                    <connections>
+                        <segue destination="yTk-G4-yqx" kind="show" identifier="goToDetailRule" id="a2C-Go-uKI"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IXQ-GH-htD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -271,6 +274,11 @@
                         <viewLayoutGuide key="safeArea" id="Eyy-z0-bZu"/>
                     </view>
                     <navigationItem key="navigationItem" id="eud-5w-y1c"/>
+                    <connections>
+                        <outlet property="formsLabel" destination="bS6-s1-QTQ" id="x6s-Cn-soE"/>
+                        <outlet property="ruleDescriptionLabel" destination="i1H-nf-C2w" id="zga-8V-3Cr"/>
+                        <outlet property="ruleNameLabel" destination="O5l-w5-gao" id="yZP-xv-BrD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oL2-9s-ATb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

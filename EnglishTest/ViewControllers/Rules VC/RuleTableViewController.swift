@@ -10,8 +10,13 @@ import UIKit
 
 class RuleTableViewController: UITableViewController {
     
+        var ruleToPass = ""
     
-       var rules = [String]()
+//        var times = [String]()
+//        var verbs = [String]()
+    
+        var rules = [String]()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,8 +24,10 @@ class RuleTableViewController: UITableViewController {
         rules = ["Глагол  to be в Present Simple",
                  "Глагол to do в Present Simple",
                  "Глагол to have в Present Simple"]
-     
-
+       
+//        times = ["Present Simple","Present Continuous"]
+//        verbs = ["to be", "to do", "to have"]
+    
     }
 
     // MARK: - Table view data source
@@ -51,9 +58,11 @@ class RuleTableViewController: UITableViewController {
         let indexPath = tableView.indexPathForSelectedRow!
         let currentCell = tableView.cellForRow(at: indexPath)! as UITableViewCell
         
-        let ruleToPass = currentCell.textLabel?.text!
+        self.ruleToPass = currentCell.textLabel?.text! ?? ""
         
-        print(ruleToPass!)
+        print(ruleToPass)
+        
+        performSegue(withIdentifier: "goToDetailRule", sender: self)
     }
 
     /*
@@ -91,14 +100,19 @@ class RuleTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
+     
+    override func prepare( for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "goToDetailRule" {
+            
+            let detailVC = segue.destination as! DetailRuleViewController
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+            detailVC.rule = self.ruleToPass
+            
+            print("called")
+
+        }
     }
-    */
-
 }

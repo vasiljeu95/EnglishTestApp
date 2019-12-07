@@ -9,11 +9,20 @@
 import UIKit
 
 class DetailRuleViewController: UIViewController {
-
+    
+      var rule = ""
+    
+    @IBOutlet weak var ruleNameLabel: UILabel!
+    
+    @IBOutlet weak var ruleDescriptionLabel: UILabel!
+    
+    @IBOutlet weak var formsLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+      
+        ruleNameLabel.text = rule
     }
     
 
