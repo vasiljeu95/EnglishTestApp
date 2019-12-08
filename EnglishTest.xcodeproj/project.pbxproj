@@ -17,7 +17,11 @@
 		E330A7452381EC2B002E1B72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E330A7442381EC2B002E1B72 /* Assets.xcassets */; };
 		E330A7482381EC2B002E1B72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E330A7462381EC2B002E1B72 /* LaunchScreen.storyboard */; };
 		E330A7522383305D002E1B72 /* TestEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E330A7512383305D002E1B72 /* TestEnum.swift */; };
+		E362CF29238DD47000F6D830 /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E362CF28238DD47000F6D830 /* AccountTableViewController.swift */; };
 		E362CF2B238DD67700F6D830 /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E362CF2A238DD67700F6D830 /* ExerciseViewController.swift */; };
+		E37D040C2399748D00D95344 /* NameAccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37D040B2399748D00D95344 /* NameAccountsViewController.swift */; };
+		E37D0410239D819900D95344 /* TopicsAccountsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37D040F239D819900D95344 /* TopicsAccountsTableViewController.swift */; };
+		E38FF6BA23859DEB0006F925 /* ButtonTestEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38FF6B923859DEB0006F925 /* ButtonTestEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +37,11 @@
 		E330A7472381EC2B002E1B72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E330A7492381EC2B002E1B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E330A7512383305D002E1B72 /* TestEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEnum.swift; sourceTree = "<group>"; };
+		E362CF28238DD47000F6D830 /* AccountTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewController.swift; sourceTree = "<group>"; };
 		E362CF2A238DD67700F6D830 /* ExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
+		E37D040B2399748D00D95344 /* NameAccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameAccountsViewController.swift; sourceTree = "<group>"; };
+		E37D040F239D819900D95344 /* TopicsAccountsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsAccountsTableViewController.swift; sourceTree = "<group>"; };
+		E38FF6B923859DEB0006F925 /* ButtonTestEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTestEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +83,21 @@
 			path = EnglishTest;
 			sourceTree = "<group>";
 		};
+		E37D040A2399746500D95344 /* AccountsVC */ = {
+			isa = PBXGroup;
+			children = (
+				E362CF28238DD47000F6D830 /* AccountTableViewController.swift */,
+				E37D040B2399748D00D95344 /* NameAccountsViewController.swift */,
+				E37D040F239D819900D95344 /* TopicsAccountsTableViewController.swift */,
+				E330A73F2381EC29002E1B72 /* TestEnglishLevelViewController.swift */,
+			);
+			path = AccountsVC;
+			sourceTree = "<group>";
+		};
 		E38FF6BB2387082F0006F925 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E37D040A2399746500D95344 /* AccountsVC */,
 				E362CF2A238DD67700F6D830 /* ExerciseViewController.swift */,
 				6083FD41239B8B87004D17A4 /* WordsListViewController.swift */,
 				6083FD4B239BF91F004D17A4 /* WordViewController.swift */,
@@ -193,12 +213,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E362CF29238DD47000F6D830 /* AccountTableViewController.swift in Sources */,
 				6083FD46239B8DCD004D17A4 /* Word.swift in Sources */,
 				E362CF2B238DD67700F6D830 /* ExerciseViewController.swift in Sources */,
 				6083FD4C239BF91F004D17A4 /* WordViewController.swift in Sources */,
 				E330A73C2381EC29002E1B72 /* AppDelegate.swift in Sources */,
 				E330A73E2381EC29002E1B72 /* SceneDelegate.swift in Sources */,
+				E38FF6BA23859DEB0006F925 /* ButtonTestEnum.swift in Sources */,
+				E37D040C2399748D00D95344 /* NameAccountsViewController.swift in Sources */,
 				E330A7522383305D002E1B72 /* TestEnum.swift in Sources */,
+				E37D0410239D819900D95344 /* TopicsAccountsTableViewController.swift in Sources */,
 				6083FD4A239B98F6004D17A4 /* DataManagerWords.swift in Sources */,
 				6083FD42239B8B87004D17A4 /* WordsListViewController.swift in Sources */,
 			);
