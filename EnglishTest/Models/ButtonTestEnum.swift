@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum ButtonEnum {
+enum ButtonTestEnum {
     case buttonOne
     case buttonTwo
     case buttonThree
