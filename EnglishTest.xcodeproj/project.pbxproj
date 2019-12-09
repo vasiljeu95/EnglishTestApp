@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C98E03A239E566D00359D26 /* DetailExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C98E039239E566D00359D26 /* DetailExerciseViewController.swift */; };
 		607DCC54239E3AB700A7CBC6 /* TestEnglishLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607DCC53239E3AB600A7CBC6 /* TestEnglishLevelViewController.swift */; };
 		607DCC56239E3ACB00A7CBC6 /* TopicsAccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607DCC55239E3ACB00A7CBC6 /* TopicsAccountsViewController.swift */; };
 		607DCC58239E3AF200A7CBC6 /* TestResultSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607DCC57239E3AF200A7CBC6 /* TestResultSwitch.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C98E039239E566D00359D26 /* DetailExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailExerciseViewController.swift; sourceTree = "<group>"; };
 		607DCC53239E3AB600A7CBC6 /* TestEnglishLevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestEnglishLevelViewController.swift; sourceTree = "<group>"; };
 		607DCC55239E3ACB00A7CBC6 /* TopicsAccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicsAccountsViewController.swift; sourceTree = "<group>"; };
 		607DCC57239E3AF200A7CBC6 /* TestResultSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestResultSwitch.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			children = (
 				E37D040A2399746500D95344 /* AccountsVC */,
 				E362CF2A238DD67700F6D830 /* ExerciseViewController.swift */,
+				5C98E039239E566D00359D26 /* DetailExerciseViewController.swift */,
 				6083FD41239B8B87004D17A4 /* WordsListViewController.swift */,
 				6083FD4B239BF91F004D17A4 /* WordViewController.swift */,
 			);
@@ -225,6 +228,7 @@
 				E362CF29238DD47000F6D830 /* AccountTableViewController.swift in Sources */,
 				6083FD46239B8DCD004D17A4 /* Word.swift in Sources */,
 				E362CF2B238DD67700F6D830 /* ExerciseViewController.swift in Sources */,
+				5C98E03A239E566D00359D26 /* DetailExerciseViewController.swift in Sources */,
 				6083FD4C239BF91F004D17A4 /* WordViewController.swift in Sources */,
 				607DCC56239E3ACB00A7CBC6 /* TopicsAccountsViewController.swift in Sources */,
 				E330A73C2381EC29002E1B72 /* AppDelegate.swift in Sources */,

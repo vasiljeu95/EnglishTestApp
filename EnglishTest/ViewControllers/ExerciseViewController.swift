@@ -8,21 +8,53 @@
 
 import UIKit
 
-class ExerciseViewController: UIViewController {
-
-    @IBOutlet var presentSimpleView: UIView!
-    @IBOutlet var presentContinuousView: UIView!
-    @IBOutlet var presentPerfectView: UIView!
-    @IBOutlet var presentPerfectContinuousView: UIView!
+class ExerciseViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    
+    @IBOutlet var tableView: UITableView!
+    
+    var tasks = [
+        "Прочитать текст",
+        "Пересказать текст"]
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        presentSimpleView.layer.cornerRadius = 10
-        presentContinuousView.layer.cornerRadius = 10
-        presentPerfectView.layer.cornerRadius = 10
-        presentPerfectContinuousView.layer.cornerRadius = 10
+        
+        
     }
-
-
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        tasks.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellEx", for: indexPath)
+        
+        cell.textLabel?.text = tasks[indexPath.row]
+        cell.textLabel?.numberOfLines = 0
+        cell.imageView?.image = UIImage(named: tasks[indexPath.row])
+        
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        self.performSegue(withIdentifier: "to_excercise", sender: nil)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         if let indexPath = tableView.indexPathForSelectedRow {
+             let detailVC = segue.destination as! DetailExerciseViewController
+             detailVC.tasksTitle = tasks[indexPath.row]
+         }
+     }
+    
 }
+
