@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		607DCC54239E3AB700A7CBC6 /* TestEnglishLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607DCC53239E3AB600A7CBC6 /* TestEnglishLevelViewController.swift */; };
+		607DCC56239E3ACB00A7CBC6 /* TopicsAccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607DCC55239E3ACB00A7CBC6 /* TopicsAccountsViewController.swift */; };
+		607DCC58239E3AF200A7CBC6 /* TestResultSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607DCC57239E3AF200A7CBC6 /* TestResultSwitch.swift */; };
 		6083FD42239B8B87004D17A4 /* WordsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6083FD41239B8B87004D17A4 /* WordsListViewController.swift */; };
 		6083FD46239B8DCD004D17A4 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6083FD45239B8DCD004D17A4 /* Word.swift */; };
 		6083FD4A239B98F6004D17A4 /* DataManagerWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6083FD49239B98F6004D17A4 /* DataManagerWords.swift */; };
@@ -25,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		607DCC53239E3AB600A7CBC6 /* TestEnglishLevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestEnglishLevelViewController.swift; sourceTree = "<group>"; };
+		607DCC55239E3ACB00A7CBC6 /* TopicsAccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicsAccountsViewController.swift; sourceTree = "<group>"; };
+		607DCC57239E3AF200A7CBC6 /* TestResultSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestResultSwitch.swift; sourceTree = "<group>"; };
 		6083FD41239B8B87004D17A4 /* WordsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsListViewController.swift; sourceTree = "<group>"; };
 		6083FD45239B8DCD004D17A4 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		6083FD49239B98F6004D17A4 /* DataManagerWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerWords.swift; sourceTree = "<group>"; };
@@ -86,6 +92,8 @@
 		E37D040A2399746500D95344 /* AccountsVC */ = {
 			isa = PBXGroup;
 			children = (
+				607DCC55239E3ACB00A7CBC6 /* TopicsAccountsViewController.swift */,
+				607DCC53239E3AB600A7CBC6 /* TestEnglishLevelViewController.swift */,
 				E362CF28238DD47000F6D830 /* AccountTableViewController.swift */,
 				E37D040B2399748D00D95344 /* NameAccountsViewController.swift */,
 				E37D040F239D819900D95344 /* TopicsAccountsTableViewController.swift */,
@@ -134,6 +142,7 @@
 		E38FF6BF238708710006F925 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				607DCC57239E3AF200A7CBC6 /* TestResultSwitch.swift */,
 				E330A7512383305D002E1B72 /* TestEnum.swift */,
 				6083FD45239B8DCD004D17A4 /* Word.swift */,
 				6083FD49239B98F6004D17A4 /* DataManagerWords.swift */,
@@ -217,11 +226,14 @@
 				6083FD46239B8DCD004D17A4 /* Word.swift in Sources */,
 				E362CF2B238DD67700F6D830 /* ExerciseViewController.swift in Sources */,
 				6083FD4C239BF91F004D17A4 /* WordViewController.swift in Sources */,
+				607DCC56239E3ACB00A7CBC6 /* TopicsAccountsViewController.swift in Sources */,
 				E330A73C2381EC29002E1B72 /* AppDelegate.swift in Sources */,
 				E330A73E2381EC29002E1B72 /* SceneDelegate.swift in Sources */,
 				E37D040C2399748D00D95344 /* NameAccountsViewController.swift in Sources */,
 				E330A7522383305D002E1B72 /* TestEnum.swift in Sources */,
 				E37D0410239D819900D95344 /* TopicsAccountsTableViewController.swift in Sources */,
+				607DCC58239E3AF200A7CBC6 /* TestResultSwitch.swift in Sources */,
+				607DCC54239E3AB700A7CBC6 /* TestEnglishLevelViewController.swift in Sources */,
 				6083FD4A239B98F6004D17A4 /* DataManagerWords.swift in Sources */,
 				60A821EC239DA5DE00FE76DC /* ButtonTestEnum.swift in Sources */,
 				6083FD42239B8B87004D17A4 /* WordsListViewController.swift in Sources */,
